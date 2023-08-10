@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <div class="transaction">
+            <select id="transactionType">
+                <option value="credit">Credit</option>
+                <option value="debit">Debit</option>
+            </select>
+            <input type="text" id="transactionDescription" placeholder="Description">
+            <input type="number" id="transactionAmount" placeholder="Amount">
+            <button id="addTransaction">Add</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>Edit</th>
+                </tr>
+            </thead>
+            <tbody id="transactionTableBody"></tbody>
+        </table>
+        <div id="remainingBalance">Total Remaining Balance: ₹0</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
